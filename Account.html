@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flipkart Account</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Emblem.png" alt="Flipkart Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Shop</a></li>
+                <li><a href="./Account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="account-page">
+        <div class="user-profile">
+            <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="User Profile Image">
+            <h2>User Name</h2>
+        </div>
+        <div class="user-details">
+            <h3>User Details</h3>
+            <div class="detail">
+                <span class="label">Phone Number:</span>
+                <span class="value">123-456-7890</span>
+            </div>
+            <div class="detail">
+                <span class="label">Gender:</span>
+                <span class="value">Male</span>
+            </div>
+            <div class="detail">
+                <span class="label">Date of Birth:</span>
+                <span class="value">January 1, 1990</span>
+            </div>
+        </div>
+        <div class="parse">
+        <div class="head">
+            <h1>Loyalty Points</h1>
+        </div>
+        <div class="conn">
+            <p>Your Address: <span id="userAddress"></span></p>
+            <p>Loyalty Points: <span id="loyaltyPoints"></span></p>
+            <p>Earn Points: <input type="number" id="earnAmount" min="1"> Ether <button onclick="earnPoints()">Earn</button></p>
+            <p>Redeem Points: <input type="number" id="redeemAmount" min="1"> Points <button onclick="redeemPoints()">Redeem</button></p>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Flipkart. All rights reserved.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@1.5.2/dist/web3.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Flipkart Purchase</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="https://logos-world.net/wp-content/uploads/2020/11/Flipkart-Emblem.png" alt="Flipkart Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html">Shop</a></li>
+                <li><a href="./Account.html">Account</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="next-screen1">
+            <div class="congratulation-message">
+                <h2>Congratulations on your purchase!</h2>
+                <p>You have earned a reward for your purchase.</p>
+            </div>
+            <div class="reward-buttons">
+                <a href="./Account.html"><button class="reward-button">Take Reward Now</button></a>
+                <a href="./index.html"><button class="reward-button" onclick="takeRewardAfterReturn()">Take reward after return period gets over</button></a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Flipkart. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
